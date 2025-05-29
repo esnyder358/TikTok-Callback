@@ -5,8 +5,6 @@ export default function handler(req, res) {
     return res.status(400).send("Missing authorization code.");
   }
 
-  console.log("Authorization Code:", code);
-
   res.status(200).send(`
     <h1>Authorization Code Received</h1>
     <p>Code: <code>${code}</code></p>
